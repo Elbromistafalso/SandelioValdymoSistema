@@ -10,10 +10,11 @@ public class ClientDto {
 	private String date;
 	private String phone;
 	private String type;
+	private int inventorySize;
 	
-	ClientDto(){}
+	public ClientDto(){}
 	
-	public ClientDto(Long id, String name, String surname, String date, String phone, String type) {
+	public ClientDto(Long id, String name, String surname, String date, String phone, String type, int inventorySize) {
 		super();
 		this.id = id;
 		this.name = name;
@@ -21,6 +22,7 @@ public class ClientDto {
 		this.date = date;
 		this.phone = phone;
 		this.type = type;
+		this.inventorySize = inventorySize;
 	}
 
 	public Long getId() {
@@ -70,5 +72,15 @@ public class ClientDto {
 	public void setType(String type) {
 		this.type = type;
 	}
+
+	public int getInventorySize() {
+		return inventorySize;
+	}
+
+	public void setInventorySize(int inventorySize) {
+		this.inventorySize = inventorySize;
+	}
+	
+	
 
 }
